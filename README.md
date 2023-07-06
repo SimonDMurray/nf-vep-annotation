@@ -21,3 +21,8 @@ Assuming your working directory is this repository and you have a Nextflow binar
 2. The container is a local image provided, ideally this image would be pushed to DockerHub and then the image would be pulled if there is no local copy
 3. The vcf produced is not sorted due to the nature of how Nextflow parallelises tasks, adding `picard` to the container and a process that sorts the output vcf would fix this 
 4. The regenerating of the plugin header lines is tool specific and does not scale well as you have to know how each tool updates the header
+5. Adding the scratch directive if running on an executor other than local will mean all teh little vcf files will be stored on execution node so the file sysystem doesn't get overloaded
+5. Adding the scratch directive if running on an executor other than local will mean all teh little vcf files will be stored on execution node so the file sysystem doesn't get overloaded
+5. Adding the scratch directive if running on an executor other than local will mean all teh little vcf files will be stored on execution node so the file sysystem doesn't get overloaded
+5. Adding the scratch directive if running on an executor other than local will mean all teh little vcf files will be stored on execution node so the file sysystem doesn't get overloaded
+5. Adding the scratch directive if running on an executor other than local will mean all teh little vcf files will be stored on execution node so the file sysystem doesn't get overloaded
