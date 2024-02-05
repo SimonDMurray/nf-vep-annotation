@@ -6,7 +6,7 @@ A 48 hour challenge to implement vep annotation using Nextflow
 2. Ensure you have a local instllation of Docker
 
 ## Building the Docker Image
-From the directory that contains the `Dockerfile`, run `docker built -t vep:v0.1`
+From the directory that contains the `Dockerfile`, run `docker build -t vep:v0.1 .`
 
 If you choose a to name your image differently, then change the line `container = 'vep:v0.1'` in `nextflow.config` to your image name
 
